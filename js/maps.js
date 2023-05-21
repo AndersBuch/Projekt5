@@ -101,6 +101,21 @@ async function initMap(){
   
   });
 
+  addMarker({location:{ lat: 55.3794920912252, lng: 10.396392955889986 },          // Hurtig 1 - CCS-Combo OK  
+  imageIcon: "https://buchdesigns.dk/img/baseline_location_pin_black_36dp.png",
+  content:
+  '<div id="content" style="width: 200px; height: 220px">'+
+    '<div id="bodyContent>'+
+      '<div id="adr" style="width: 180px;"><h3>Hjallesevej 144, 5230 Odense M</h3></div>'+
+      '<hr></hr>'+
+      '<div><p id="mapinfo" style="font-size: 15px;"><b>Stiktype:</b> CCS-Combo</p></div>'+
+      '<div><p id="mapinfo" style="font-size: 15px;"><b>Antal:</b> 2</p></div>'+
+      '<div><p id="mapinfo" style="font-size: 15px;"><b>Hastighedstype:</b> Hurtig&nbsp;<span style="font-size: 12px; color: rgb(126, 126, 126);">(75kW)</span></p></div>'+
+      '<div><p id="mapinfo" style="font-size: 15px;"><b>Udbyder:</b> OK</p></div>'+
+    '</div>'+
+  '</div>'
+  
+  });
 
 }
 
