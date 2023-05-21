@@ -46,7 +46,13 @@ async function initMap(){
   
   addMarker({location:{ lat: 55.384090, lng: 10.363820 },
   imageIcon: "https://buchdesigns.dk/img/baseline_location_pin_black_36dp.png",
-  content: '<h1>Nice sted</h1>'
+  content:
+  '<div id="content" style="width: 150px; height: 200px">'+
+    '<div id="bodyContent>'+
+      '<div id="adr" style="width: 140px;"><h3>Adresse som er mega sej og nice og den kan alt muligt sejt</h3></div>'+
+      '<hr></hr>'+
+    '</div>'+
+  '</div>'
   
   });
 
