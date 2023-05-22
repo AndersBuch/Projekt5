@@ -21,7 +21,7 @@ async function initMap(){
 
    // Add marker
     function addMarker(property) {
-  const marker = new google.maps.Marker({
+    const marker = new google.maps.Marker({
     position: property.location,
     map: map,
     icon: property.imageIcon,
