@@ -26,7 +26,7 @@ body {
   border: none;
   text-decoration: none;
   color: #000000;
-  font-size: 15px;
+  font-size: 20px;
   cursor: pointer;
   
  }
@@ -37,12 +37,15 @@ body {
  }
 
  .link-2  {
+  display: flex;
   background: none;
   border: none;
   text-decoration: none;
   color: #000000;
   font-size: 15px;
   cursor: pointer;
+  justify-content: left;
+  align-items: center;
   
  }
 
@@ -86,9 +89,15 @@ body {
 .dropdown-links {
   display: flex;
   flex-direction: column;
-  gap: .75rem;
+  gap: .150rem;
   
 }
+
+
+
+
+
+
 
 
 
