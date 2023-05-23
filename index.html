@@ -7,6 +7,7 @@
     <title>Ladekortet</title>
     <link rel="stylesheet" href="css/maps.css">
     <script src="js/maps.js"></script>
+    <script src="js/mapjsbutton.js"></script>
     <script defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhn5md-IQq466_wHtA0pnOJNjPoBDikOc&callback=initMap">
 </script>
@@ -15,7 +16,10 @@
     <h1>Ladekort</h1>
     <!--The div element for the map -->
     <div id="map"></div>
-    <button onclick="VisStandere(3)"></button>
+    <button onclick="VisStandere(0)">Alle</button>
+    <button onclick="VisStandere(1)">Normal 1</button>
+    <button onclick="VisStandere(2)">Hurtig</button>
+    <button onclick="VisStandere(3)">Lyn</button>
 
     
 
