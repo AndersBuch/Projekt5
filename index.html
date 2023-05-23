@@ -13,13 +13,25 @@
 </script>
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="navigation">
+                <button class="link" data-dropdown-button>Anbefalet/Fremhævede</button>
+                <div class="dropdown-menu" data-dropdown>
+
+                </div>
+                <button class="link" data-dropdown-button>Læs Videre/ Læs Mere Om/ Udforsk</button>
+                <button class="link" data-dropdown-button>Brugererfaringer</button>
+            </div>
+        </nav>
+    </header>
     <h1>Ladekort</h1>
     <!--The div element for the map -->
     <div id="map"></div>
-    <button onclick="VisStandere(0)">Alle</button>
-    <button onclick="VisStandere(1)">Normal 1</button>
-    <button onclick="VisStandere(2)">Hurtig</button>
-    <button onclick="VisStandere(3)">Lyn</button>
+    <button onclick="VisStandere(0)" class="map-button">Alle</button>
+    <button onclick="VisStandere(1)" class="map-button">Normal 1</button>
+    <button onclick="VisStandere(2)" class="map-button">Hurtig</button>
+    <button onclick="VisStandere(3)" class="map-button">Lyn</button>
 
     
 
