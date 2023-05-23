@@ -86,7 +86,7 @@ body {
 .dropdown-links {
   display: flex;
   flex-direction: column;
-  gap: .25rem;
+  gap: .75rem;
   
 }
 
