@@ -1,5 +1,45 @@
 
 
+const ladestandere = [
+  {location:{ lat: 55.39435162532834, lng: 10.356862676330612 },          // Lyn 1 - CCS-Combo Circle K
+  imageIcon: "https://buchdesigns.dk/img/baseline_location_pin_black_36dp.png",
+  content:
+  '<div id="content" style="width: 200px; height: 220px">'+
+    '<div id="bodyContent>'+
+      '<div id="adr" style="width: 180px;"><h3>Middelfartvej 53, 5200 Odense</h3></div>'+
+      '<hr></hr>'+
+      '<div><p id="mapinfo" style="font-size: 15px;"><b>Stiktype:</b> CCS-Combo</p></div>'+
+      '<div><p id="mapinfo" style="font-size: 15px;"><b>Antal:</b> 2</p></div>'+
+      '<div><p id="mapinfo" style="font-size: 15px;"><b>Hastighedstype:</b> Lyn&nbsp;<span style="font-size: 12px; color: rgb(126, 126, 126);">(150kW)</span></p></div>'+
+      '<div><p id="mapinfo" style="font-size: 15px;"><b>Udbyder:</b> Circle K</p></div>'+
+    '</div>'+
+  '</div>',
+  type: 3
+  
+  },
+  {
+    location:{ lat: 55.37786938684984, lng: 10.431300556754865 },          // Lyn 2 - CCS-Combo CLEVER
+    imageIcon: "https://buchdesigns.dk/img/baseline_location_pin_black_36dp.png",
+    content:
+    '<div id="content" style="width: 200px; height: 220px">'+
+      '<div id="bodyContent>'+
+        '<div id="adr" style="width: 180px;"><h3>Niels Bohrs Alle 150, 5230 Odense</h3></div>'+
+        '<hr></hr>'+
+        '<div><p id="mapinfo" style="font-size: 15px;"><b>Stiktype:</b> CCS-Combo</p></div>'+
+        '<div><p id="mapinfo" style="font-size: 15px;"><b>Antal:</b> 2</p></div>'+
+        '<div><p id="mapinfo" style="font-size: 15px;"><b>Hastighedstype:</b> Lyn&nbsp;<span style="font-size: 12px; color: rgb(126, 126, 126);">(150kW)</span></p></div>'+
+        '<div><p id="mapinfo" style="font-size: 15px;"><b>Udbyder:</b> CLEVER</p></div>'+
+      '</div>'+
+    '</div>',
+    type: 3
+  }
+];
+
+function VisStandere(Type){
+  // Fjern alle markers
+
+  // Loop gennem array og tilføj markers af type
+}
 async function initMap(){
 
   // Map option
@@ -51,6 +91,9 @@ async function initMap(){
 
   }
 
+
+
+
   // Add markers with content , 
   
   addMarker({location:{ lat: 55.39435162532834, lng: 10.356862676330612 },          // Lyn 1 - CCS-Combo Circle K
@@ -65,7 +108,8 @@ async function initMap(){
       '<div><p id="mapinfo" style="font-size: 15px;"><b>Hastighedstype:</b> Lyn&nbsp;<span style="font-size: 12px; color: rgb(126, 126, 126);">(150kW)</span></p></div>'+
       '<div><p id="mapinfo" style="font-size: 15px;"><b>Udbyder:</b> Circle K</p></div>'+
     '</div>'+
-  '</div>'
+  '</div>',
+  type: 3
   
   });
 
