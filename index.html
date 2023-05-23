@@ -7,10 +7,10 @@
     <title>Ladekortet</title>
     <link rel="stylesheet" href="css/maps.css">
     <script src="js/maps.js"></script>
-    <script src="js/mapjsbutton.js"></script>
     <script defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhn5md-IQq466_wHtA0pnOJNjPoBDikOc&callback=initMap">
 </script>
+<script src="js/dropdown.js" defer></script>
 </head>
 <body>
     <header>
@@ -18,22 +18,62 @@
             <div class="navigation">
                 <div class="dropdown" data-dropdown>
                     <button class="link" data-dropdown-button>Anbefalet/Fremhævede</button>
-                    <div class="dropdown-menu">
-                        dropdown content
+                    <div class="dropdown-menu information-grid">
+                        <div class="dropdown-links">
+                            <a href="#" class="link-2">Ladekort</a>
+                            <a href="#" class="link-2">Bil katalog</a>
+                            <a href="#" class="link-2">Lade derhjemme</a>
+                            <a href="#" class="link-2">Fra benzin til el</a>
+                        </div>
                     </div>
                 </div>
-                <button class="link" data-dropdown-button>Læs Videre/ Læs Mere Om/ Udforsk</button>
-                <button class="link" data-dropdown-button>Brugererfaringer</button>
+                <div class="dropdown" data-dropdown>
+                    <button class="link" data-dropdown-button>Læs Videre/ Læs Mere Om/ Udforsk</button>
+                    <div class="dropdown-menu information-grid">
+                        <div class="dropdown-links">
+                            <div>
+                                <div class="dropdown-links">
+                                    <a href="#" class="link-2">Priser på elbiler</a>
+                                    <a href="#" class="link-2">Rækkevidde</a>
+                                    <a href="#" class="link-2">Garanti</a>
+                                    <a href="#" class="link-2">Batterityper</a>
+                                    <a href="#" class="link-2">Stiktyper</a>
+                                </div>
+                                <div class="dropdown-links">
+                                    <a href="#" class="link-2">Ladehastighed</a>
+                                    <a href="#" class="link-2">Brugte elbiler</a>
+                                    <a href="#" class="link-2">Service på elbiler</a>
+                                    <a href="#" class="link-2">Strømkilder</a>
+                                    <a href="#" class="link-2">WLTP</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown" data-dropdown>
+                    <button class="link" data-dropdown-button>Brugererfaringer</button>
+                    <div class="dropdown-menu information-grid">
+                        <div class="dropdown-links">
+                            <a href="#" class="link-2">Ladekort</a>
+                            <a href="#" class="link-2">Bil katalog</a>
+                            <a href="#" class="link-2">Lade derhjemme</a>
+                            <a href="#" class="link-2">Fra benzin til el</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
-    <h1>Ladekort</h1>
-    <!--The div element for the map -->
-    <div id="map"></div>
-    <button onclick="VisStandere(0)" class="map-button">Alle</button>
-    <button onclick="VisStandere(1)" class="map-button">Normal 1</button>
-    <button onclick="VisStandere(2)" class="map-button">Hurtig</button>
-    <button onclick="VisStandere(3)" class="map-button">Lyn</button>
+    <section>
+        <div class="header-1"><h1>Ladekort</h1></div>
+        <!--The div element for the map -->
+        <div id="map"></div>
+        <button onclick="VisStandere(0)" class="map-button">Alle</button>
+        <button onclick="VisStandere(1)" class="map-button">Normal</button>
+        <button onclick="VisStandere(2)" class="map-button">Hurtig</button>
+        <button onclick="VisStandere(3)" class="map-button">Lyn</button>
+    </section>
+
 
     
 
