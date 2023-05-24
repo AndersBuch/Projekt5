@@ -145,6 +145,29 @@ table {
   margin-right: 10px;
 }
 
+.content-container-grid {
+  display: grid;
+  padding-block: 2rem;
+  width: min(95%, 70rem);
+  margin-inline: auto;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr)
+}
+
+.grid-col-span-2 {
+  grid-column: span 2;
+}
+
+.headline-tekst {
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  text-align: center;
+
+
+}
+
 
 
 
