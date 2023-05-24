@@ -20,9 +20,13 @@ body {
   width: 100%;
   height: 40px;
   z-index: 9999; /* Ensure the navigation is on top of other elements */
+  
  }
 
  
+ header {
+  margin-bottom: 100px;
+ }
  .link  {
   background: none;
   border: none;
@@ -101,6 +105,21 @@ body {
 
  /* Menubar --- slutter */
 
+ /* Links table --- starter */
+table {
+  background-color: #357FFF;
+  border-radius: .30rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  font-size: 15px;
+}
+
+.icons-table {
+  fill: #F1C40F;
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
 
 
 
@@ -109,11 +128,16 @@ body {
 
 
 
-
+/* Links table --- slutter */
 
  /* map --- starter */
 
+ .header-1 {
+  margin-top: 100px;
+ }
+
  #map {
+  margin-top: 100px;
     height: 600px;
     width: 700px;
   }
