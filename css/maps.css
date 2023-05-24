@@ -27,6 +27,9 @@ body {
  header {
   margin-bottom: 200px;
  }
+ 
+
+ 
  .link  {
   background: none;
   border: none;
@@ -37,9 +40,10 @@ body {
   
  }
 
- .dropdown.active > .link,
+ .dropdown.active > .link .link svg,
  .link:hover {
   color: #57B33C;
+  fill: #57B33C;
  }
 
  .link-2  {
@@ -101,6 +105,10 @@ body {
 
 .icons {
   margin-right: 10px;
+}
+
+.login-form > input {
+  margin-bottom: .5rem;
 }
 
  /* Menubar --- slutter */
