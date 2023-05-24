@@ -14,6 +14,7 @@ body {
   background-color: #ffffff;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 30px;
   gap: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -23,7 +24,15 @@ body {
   
  }
 
- 
+ .logo {
+  font-weight: 600;
+  font-size: 30px;
+ }
+
+ .logo-green {
+  color: #57B33C;
+ }
+
  header {
   margin-bottom: 200px;
  }
@@ -67,6 +76,8 @@ body {
  .dropdown {
   position: relative;
  }
+
+
 
  .dropdown-menu {
   position: absolute;
