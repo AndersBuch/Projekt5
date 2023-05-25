@@ -127,9 +127,9 @@ body {
   height: 64px;
 }
 
- /* Menubar --- slutter */
+/* Menubar --- slutter */
 
- /* Links table --- starter */
+/* Links table --- starter */
 table {
   background-color: #357FFF;
   border-radius: .30rem;
@@ -138,6 +138,10 @@ table {
   font-size: 25px;
 }
 
+th {
+  font-weight: 500;
+  padding: 10px;
+}
 
 
 .icons-table {
@@ -145,39 +149,44 @@ table {
   margin-right: 10px;
 }
 
-.content-container-grid {
-  display: grid;
-  padding-block: 2rem;
-  width: min(95%, 70rem);
-  margin-inline: auto;
-  gap: 1.5rem;
-  grid-template-columns: repeat(2, 1fr)
-}
-
-.grid-col-span-2 {
-  grid-column: span 2;
-}
-
-.headline-tekst {
-  font-size: 30px;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-  text-align: center;
-
-
-}
-
-
-
-
-
-
-
-
 /* Links table --- slutter */
 
- /* map --- starter */
+/* flex container properties --- starter */
+
+.content-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+}
+
+.content {
+  display: flex;
+  margin: 20px;
+
+}
+
+.content-headline {
+  min-width: 300px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+/* flex container properties --- slutter */
+
+
+
+
+
+
+
+
+
+
+
+
+/* map --- starter */
 
  .header-1 {
   margin-top: 100px;
@@ -202,4 +211,4 @@ table {
     font-size: 16px;
   }
 
- /* Menubar --- slutter */
+/* map --- slutter */
