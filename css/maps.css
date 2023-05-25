@@ -305,6 +305,54 @@ th {
 
 /* Ladeboks cards --- starter */
 
+.card-container {
+  display: flex;
+  background-color: #57B33C;
+  padding: 20px;
+  border-radius: 0 .30rem .30rem 0;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  width: fit-content;
+  height: fit-content;
+}
+
+.card-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.firma-logo {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.cards-flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tekst-bold {
+  font-weight: 600;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+
 
 
 
