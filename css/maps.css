@@ -22,7 +22,6 @@ body {
   width: 100%;
   height: auto;
   z-index: 9999; /* Ensure the navigation is on top of other elements */
-  
  }
 
  .logo {
@@ -37,8 +36,6 @@ body {
  header {
   margin-bottom: 200px;
  }
- 
-
  
  .link  {
   background: none;
@@ -73,13 +70,10 @@ body {
   color:#000000;
  }
  
- 
  .dropdown {
   padding: 20px;
   position: relative;
  }
-
-
 
  .dropdown-menu {
   position: absolute;
@@ -102,7 +96,6 @@ body {
   pointer-events: auto;
 }
 
-
 .information-grid {
   display: grid;
   gap: 2rem;
@@ -113,7 +106,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: .150rem;
-  
 }
 
 .icons {
@@ -178,10 +170,6 @@ th {
   margin-right: 10px;
 }
 
-/* Links table --- slutter */
-
-/* flex container properties --- starter */
-
 .table-container {
   display: flex;
   flex-direction: row-reverse;
@@ -193,7 +181,6 @@ th {
 .content {
   display: flex;
   margin: 20px;
-
 }
 
 .content-headline {
@@ -202,8 +189,8 @@ th {
   font-weight: 400;
 }
 
-/* flex container properties --- slutter */
 
+/* Links table --- slutter */
 
 
 
@@ -222,7 +209,6 @@ th {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  
 }
 
 .header-1 {
@@ -259,15 +245,13 @@ th {
   max-width: 400px;
   border-radius: .30rem 0 0 .30rem;
 }
+
  #map {
   display: flex;
   height: 600px;
   width: 800px;
   border-radius: 0 .30rem .30rem 0;
   }
-
- 
- 
 
   .map-button {
     background-color: #4CAF50; /* Green */
@@ -288,3 +272,39 @@ th {
   }
 
 /* map --- slutter */
+
+/* Footer --- starter */
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 20px;
+  background-color: #444E5F;
+  color: #ffffff;
+}
+
+.footer-information {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 600;
+  flex-grow: 1;
+}
+
+.footer-icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.footer-icons {
+  fill: #ffffff;
+  width: 48px;
+  height: 48px;
+}
+
+/* Footer --- slutter */
