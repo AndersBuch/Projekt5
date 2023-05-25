@@ -170,7 +170,7 @@ th {
 .content-headline {
   min-width: 300px;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /* flex container properties --- slutter */
@@ -187,28 +187,73 @@ th {
 
 
 /* map --- starter */
+.map-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  
+}
 
- .header-1 {
-  margin-top: 100px;
- }
+.header-1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #000000;
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+}
 
+.btn-grp-headline {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline-h2 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.headline-h3 {
+  font-size: 20px;
+}
+
+.btn-grp-1 {
+  color: #ffffff;
+  background-color: #357FFF;
+  padding: 10px;
+  flex-wrap: wrap;
+  max-width: 400px;
+}
  #map {
-  margin-top: 100px;
-    height: 600px;
-    width: 700px;
+  display: flex;
+  height: 600px;
+  width: 800px;
   }
 
+ 
  
 
   .map-button {
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 12px 16px;
+    border-radius: 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-weight: 600;
+    margin: 2px;
+  }
+
+  .map-button:hover {
+    background-color: #000000;
   }
 
 /* map --- slutter */

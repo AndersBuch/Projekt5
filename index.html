@@ -311,14 +311,38 @@
 
 
         <!--The div element for the map -->
-
-        <div class="header-1"><h1>Ladekort</h1></div>
+        <div class="map-container">
+            <div>
+                <h2 class="header-1">Ladekort</h2>
+            </div>
+            <div>
+                <div class="button-container">
+                    <div class="btn-grp-1">
+                        <div class="btn-grp-headline"><h2 class="headline-h2">Her kan du se hvor der er sat ladestanderer op i nærheden af dig</h2></div>
+                        <h3 class="headline-h3">Ladehastighed</h3>
+                        <button onclick="VisStandere(0)" class="map-button">Alle</button>
+                        <button onclick="VisStandere(1)" class="map-button">Normal</button>
+                        <button onclick="VisStandere(2)" class="map-button">Hurtig</button>
+                        <button onclick="VisStandere(3)" class="map-button">Lyn</button>
+                        <h3 class="headline-h3">Stiktype</h3>
+                        <button class="map-button">Alle</button>
+                        <button class="map-button">CCS-Combo</button>
+                        <button class="map-button">Type 2</button>
+                        <button class="map-button">CHAdeMO</button>
+                        <h3 class="headline-h3">Udbyder</h3>
+                        <button class="map-button">Alle</button>
+                        <button class="map-button">OK</button>
+                        <button class="map-button">CLEVER</button>
+                        <button class="map-button">Allego</button>
+                    </div>
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
         
-        <div id="map"></div>
-        <button onclick="VisStandere(0)" class="map-button">Alle</button>
-        <button onclick="VisStandere(1)" class="map-button">Normal</button>
-        <button onclick="VisStandere(2)" class="map-button">Hurtig</button>
-        <button onclick="VisStandere(3)" class="map-button">Lyn</button>
+        
+   
+
 
 
 
