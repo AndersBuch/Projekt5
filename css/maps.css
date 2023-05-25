@@ -182,7 +182,7 @@ th {
 
 /* flex container properties --- starter */
 
-.content-container {
+.table-container {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
