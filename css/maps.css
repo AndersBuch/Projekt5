@@ -200,6 +200,7 @@ th {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap-reverse;
+  color: #ffffff;
 }
 
 .info-grafik-container {
@@ -211,7 +212,7 @@ th {
 
 .info-grafik-img {
   width: 500px;
-  height: 400;
+  height: 400px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
 }
 
@@ -333,7 +334,7 @@ th {
 .cards-flex-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
