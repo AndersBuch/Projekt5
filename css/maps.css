@@ -314,13 +314,8 @@ th {
     background-color: #000000;
   }
 
-/* map --- slutter */
 
-@media only screen and (max-width: 951px) {
-  #map {
-    width: 100%;
-  }
-}
+
 
 
 
@@ -339,7 +334,7 @@ th {
   }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 600px) {
+@media only screen and (min-width: 300px) and (max-width: 775px) {
   .map-container {
     padding: 10px;
   }
@@ -353,6 +348,9 @@ th {
     align-items: center;
   }
 }
+
+/* map --- slutter */
+
 /* Ladeboks cards --- starter */
 
 .card-container {
