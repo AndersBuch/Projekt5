@@ -308,14 +308,9 @@ th {
 
 .card-container {
   display: flex;
-  background-color: #57B33C;
-  padding: 20px;
-  border-radius: 0 .30rem .30rem 0;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
-  width: fit-content;
-  height: fit-content;
+  margin: 40px;
 }
 
 .card-flex {
@@ -323,7 +318,12 @@ th {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  background-color: #57B33C;
+  padding: 20px;
+  border-radius: 0 .30rem .30rem 0;
+  color: #ffffff;
+  width: fit-content;
+  height: fit-content;
 }
 
 .firma-logo {
@@ -352,18 +352,6 @@ th {
   font-size: 15px;
   font-weight: 400;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .card-button {
   background-color: #357FFF;
