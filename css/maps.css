@@ -1,4 +1,7 @@
 
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -152,11 +155,20 @@ body {
 
 /* Links table --- starter */
 table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #357FFF;
   border-radius: .30rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
   padding: 10px;
   font-size: 25px;
+  max-width: fit-content;
+  height: auto;
+}
+
+td {
+  max-width: 100%
 }
 
 th {
@@ -164,31 +176,31 @@ th {
   padding: 10px;
 }
 
-
 .icons-table {
   fill: #000000;
   margin-right: 10px;
 }
 
-.table-container {
+
+.table-content-wrapper {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
-  margin: 40px;
 }
 
-.content {
-  display: flex;
-  margin: 20px;
-}
 
-.content-headline {
-  min-width: 300px;
+.table-content-h2 {
+  min-width: 500px;
   font-size: 30px;
   font-weight: 400;
 }
 
+/* media til table --- starter */
+
+
+
+/* media til table --- slutter */
 
 /* Links table --- slutter */
 
@@ -211,9 +223,10 @@ th {
 }
 
 .info-grafik-img {
-  width: 500px;
+  max-width: 100%;
   height: 400px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
+  border-radius: .30rem;
 }
 
 .introdoktion-container {
@@ -225,7 +238,7 @@ th {
   height: 300px;
   padding: 40px;
   margin-right: 20px;
-  border-radius: 0 .30rem .30rem 0;
+  border-radius: .30rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
 }
 
@@ -239,7 +252,6 @@ th {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
 }
 
 .header-1 {
@@ -304,6 +316,43 @@ th {
 
 /* map --- slutter */
 
+@media only screen and (max-width: 951px) {
+  #map {
+    width: 100%;
+  }
+}
+
+
+
+@media only screen and (min-width: 601px) and (max-width: 950px) {
+  .map-container {
+    padding: 10px;
+  }
+
+  #map {
+    width: 100%;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+  .map-container {
+    padding: 10px;
+  }
+
+  #map {
+    width: 100%;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 /* Ladeboks cards --- starter */
 
 .card-container {
@@ -320,7 +369,8 @@ th {
   align-items: center;
   background-color: #57B33C;
   padding: 20px;
-  border-radius: 0 .30rem .30rem 0;
+  border-radius: .30rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
   color: #ffffff;
   width: fit-content;
   height: fit-content;
@@ -338,10 +388,6 @@ th {
   align-items: center;
 }
 
-.tekst-bold {
-  font-weight: 600;
-}
-
 .card-content {
   display: flex;
   flex-direction: column;
@@ -352,6 +398,11 @@ th {
   font-size: 15px;
   font-weight: 400;
 }
+
+.tekst-bold {
+  font-weight: 600;
+}
+
 
 .card-button {
   background-color: #357FFF;
