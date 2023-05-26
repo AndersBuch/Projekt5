@@ -498,6 +498,49 @@ th {
 
 /* Ladeboks card OK --- starter */
 
+.ok-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.ok-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #57B33C;
+  padding: 20px;
+  border-radius: .30rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  width: fit-content;
+  height: fit-content;
+}
+
+.ok-content-row-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.ok-content-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ok-content-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 400;
+}
 
 
 
