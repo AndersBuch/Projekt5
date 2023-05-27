@@ -196,6 +196,7 @@ body {
 
 .center {
   display: flex;
+  flex-wrap: wrap-reverse;
   align-items: center;
   justify-content: center;
   margin: 40px;
@@ -236,10 +237,23 @@ body {
   font-size: 30px;
 }
 
-.table-content-h2 {
-  min-width: 500px;
-  font-size: 30px;
+.heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+.heading-content h2 {
+  max-width: 600px;
+  font-size: 25px;
   font-weight: 400;
+}
+
+.heading-content {
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .icons-table {
@@ -506,7 +520,7 @@ body {
 }
 .ok-flex {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: #357FFF;
@@ -527,7 +541,7 @@ body {
 
 .ok-content-row {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -561,6 +575,12 @@ body {
 }
 
 /* Ladeboks card OK --- slutter */
+
+/* Ladeboks card CLEVER --- starter */
+
+
+
+/* Ladeboks card CLEVER --- slutter */
 
 /* Footer --- starter */
 
