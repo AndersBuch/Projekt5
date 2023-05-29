@@ -149,16 +149,7 @@ const ladestandere = [
   }
 ];
 
-/*
-function VisStandere(type){
-  // remove all markers
- 
-  
-  // Loop through the array and add type
 
-}
-
-*/
 let markers = [];
 let currentInfoWindow = null;
 
@@ -203,7 +194,7 @@ function VisStandere(type) {
 }
 
 
-async function initMap(){
+function initMap(){
 
   // Map option
     var options = {
@@ -222,8 +213,39 @@ async function initMap(){
     VisStandere(0);
 
     
+ 
 
-    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+function VisStandere(type){
+  // remove all markers
+ 
+  
+  // Loop through the array and add type
+
+}
+
+*/
+
+
+
+
 
 
     /*
@@ -263,9 +285,6 @@ async function initMap(){
 
   }
   */
-}
-
-
 /*
 
   // Add markers with content , 
