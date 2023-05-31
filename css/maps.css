@@ -761,6 +761,87 @@ section .card .image img{
 
 /* Ladeboks card CLEVER --- slutter */
 
+/* Infografik om biler --- starter */
+
+.info-grafik-global-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  margin: 40px;
+}
+
+.info-grafik-row-container {
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.info-grafik-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #357FFF;
+  text-align: left;
+  max-width: fit-content;
+  height: fit-content;
+  padding: 40px;
+  border-radius: .30rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
+}
+
+.info-grafik-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 40px;
+}
+
+ /* graffik stylling  */
+ .info-grafik-bil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
+  border-radius: .30rem;
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+.info-grafik-row-container {
+  flex-wrap: wrap;
+}
+
+.info-grafik-bil {
+  max-width: 60%;
+  height: auto;
+}
+
+.info-grafik-content {
+  width: auto;
+  height: auto;
+  
+}
+}
+
+
+
+  
+
+
+
+
+
+
+/* Infografik om biler --- slutter */
+
 /* Footer --- starter */
 
 .footer-container {
@@ -788,6 +869,14 @@ section .card .image img{
   align-items: center;
   
 }
+
+.footer-icons {
+  fill: #ffffff;
+  width: 48px;
+  height: 48px;
+}
+
+/* Footer --- slutter */
 
 /* Informations side  --- starter */
 
@@ -830,10 +919,6 @@ section .card .image img{
 }
 /* Informations side  --- slutter */
 
-.footer-icons {
-  fill: #ffffff;
-  width: 48px;
-  height: 48px;
-}
 
-/* Footer --- slutter */
+
+
