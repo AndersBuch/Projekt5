@@ -11,12 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/maps.css">
-    <script src="js/maps.js" defer></script>
-    <script defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhn5md-IQq466_wHtA0pnOJNjPoBDikOc&callback=initMap">
-        </script>
     <script src="js/dropdown.js" defer></script>
-    <script src="js/box.js" defer></script>
+
 </head>
 
 <body>
@@ -245,332 +241,275 @@
     </header>
     <main>
 
-        <div class="center">
-            <div class="Links-container">
-                <div class="links-content-wrapper">
-                    <div class="links-content-categori">
-                        <div class="links-content">
-                            <h2>Fremhævede</h2>
-                            <a href="#" class="link-2">
-                                <svg class="icons-table" xmlns="http://www.w3.org/2000/svg" height="48"
-                                    viewBox="0 96 960 960" width="48">
-                                    <path
-                                        d="m612 936-263-93-179 71q-17 9-33.5-1T120 883V325q0-13 7.5-23t19.5-15l202-71 263 92 178-71q17-8 33.5 1.5T840 268v565q0 11-7.5 19T814 864l-202 72Zm-34-75V356l-196-66v505l196 66Zm60 0 142-47V302l-142 54v505Zm-458-12 142-54V290l-142 47v512Zm458-493v505-505Zm-316-66v505-505Z" />
-                                </svg>
-                                Ladekort
-                            </a>
-                            <a href="#" class="link-2">
-                                <svg class="icons-table" xmlns="http://www.w3.org/2000/svg" height="48"
-                                    viewBox="0 96 960 960" width="48">
-                                    <path
-                                        d="M200 692v54q0 12.75-8.625 21.375T170 776h-20q-12.75 0-21.375-8.625T120 746V422l85-256q3-14 15.4-22t27.6-8h464q15.2 0 27.6 8 12.4 8 15.4 22l85 256v324q0 12.75-8.625 21.375T810 776h-21q-12.75 0-21.375-8.625T759 746v-54H200Zm3-330h554l-55-166H258l-55 166Zm-23 60v210-210Zm105.765 160Q309 582 324.5 566.25T340 528q0-23.333-15.75-39.667Q308.5 472 286 472q-23.333 0-39.667 16.265Q230 504.529 230 527.765 230 551 246.265 566.5q16.264 15.5 39.5 15.5ZM675 582q23.333 0 39.667-15.75Q731 550.5 731 528q0-23.333-16.265-39.667Q698.471 472 675.235 472 652 472 636.5 488.265q-15.5 16.264-15.5 39.5Q621 551 636.75 566.5T675 582Zm-159 434L292 898h148v-76l228 114H516v80ZM180 632h600V422H180v210Z" />
-                                </svg>
-                                Bil katalog
-                            </a>
-                            <a href="#" class="link-2">
-                                <svg class="icons-table" xmlns="http://www.w3.org/2000/svg" height="48"
-                                    viewBox="0 96 960 960" width="48">
-                                    <path
-                                        d="m337 842 88-140h-53V597l-87 140h52v105ZM220 504h269V276H220v228Zm0 372h269V564H220v312Zm-60 60V276q0-24 18-42t42-18h269q24 0 42 18t18 42v288h65q20.714 0 35.357 14.643T664 614v219q0 22 17.5 36.5T722 884q23 0 43-14.5t20-36.5V446h-15q-12.75 0-21.375-8.625T740 416v-90h20v-50h30v50h40v-50h30v50h20v90q0 12.75-8.625 21.375T850 446h-15v386.691Q835 876 801 906t-79.181 30q-44.155 0-75.987-30Q614 876 614 833V614h-65v322H160Zm329-60H220h269Z" />
-                                </svg>
-                                Lade derhjemme
-                            </a>
-                            <a href="#" class="link-2">
-                                <svg class="icons-table" xmlns="http://www.w3.org/2000/svg" height="48"
-                                    viewBox="0 96 960 960" width="48">
-                                    <path
-                                        d="m317 896-42-42 121-121H80v-60h316L275 552l42-42 193 193-193 193Zm326-254L450 449l193-193 42 42-121 121h316v60H564l121 121-42 42Z" />
-                                </svg>
-                                Fra benzin til el
-                            </a>
-                        </div>
-                    </div>
-                    <div class="links-content-categori">
-                        <div class="links-content">
-                            <h2>Udforsk</h2>
-                            <a href="#" class="link-2">
-                                <svg class="icons-table" xmlns="http://www.w3.org/2000/svg" height="48"
-                                    viewBox="0 96 960 960" width="48">
-                                    <path
-                                        d="M540 636q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM220 776q-24.75 0-42.375-17.625T160 716V316q0-24.75 17.625-42.375T220 256h640q24.75 0 42.375 17.625T920 316v400q0 24.75-17.625 42.375T860 776H220Zm100-60h440q0-42 29-71t71-29V416q-42 0-71-29t-29-71H320q0 42-29 71t-71 29v200q42 0 71 29t29 71Zm480 180H100q-24.75 0-42.375-17.625T40 836V376h60v460h700v60ZM220 716V316v400Z" />
-                                </svg>
-                                Priser på elbiler
-                            </a>
-                            <a href="#" class="link-2">
-                                <svg class="icons-table" xmlns="http://www.w3.org/2000/svg" height="48"
-                                    viewBox="0 96 960 960" width="48">
-                                    <path
-                                        d="m122 816-42-42 219-219q32-32 78-32t78 32l46 46q15 15 35.5 15t35.5-15l205-205H660v-60h220v220h-60V439L614 644q-32 32-78 32t-78-32l-47-47q-14-14-35-14t-35 14L122 816Z" />
-                                </svg>
-                                Rækkevidde
-                            </a>
-                            <a href="#" class="link-2">
-                                <svg class="icons-table" xmlns="http://www.w3.org/2000/svg" height="48"
-                                    viewBox="0 96 960 960" width="48">
-                                    <path
-                                        d="m385 644 36-115-95-74h116l38-119 37 119h117l-95 74 35 115-94-71-95 71Zm-141 372V712q-45-47-64.5-103T160 496q0-136 92-228t228-92q136 0 228 92t92 228q0 57-19.5 113T716 712v304l-236-79-236 79Zm236-260q109 0 184.5-75.5T740 496q0-109-75.5-184.5T480 236q-109 0-184.5 75.5T220 496q0 109 75.5 184.5T480 756ZM304 932l176-55 176 55V761q-40 29-86 42t-90 13q-44 0-90-13t-86-42v171Zm176-86Z" />
-                                </svg>
-                                Garanti
-                            </a>
-                            <a href="#" class="link-2">
-                                <svg class="icons-table" xmlns="http://www.w3.org/2000/svg" height="48"
-                                    viewBox="0 96 960 960" width="48">
-                                    <path
-                                        d="m460 816 100-240h-60V416L400 656h60v160ZM310 976q-12.75 0-21.375-8.625T280 946V270q0-12.75 8.625-21.375T310 240h90v-64h160v64h90q12.75 0 21.375 8.625T680 270v676q0 12.75-8.625 21.375T650 976H310Zm30-60h280V300H340v616Zm0 0h280-280Z" />
-                                </svg>
-                                Batterityper
-                            </a>
-                            <a href="#" class="link-2">
-                                <svg class="icons-table" xmlns="http://www.w3.org/2000/svg" height="48"
-                                    viewBox="0 -960 960 960" width="48">
-                                    <path
-                                        d="M715-360v-60h95q13 0 21.5 8.5T840-390q0 12-8.5 21t-21.5 9h-95Zm0 160v-60h95q13 0 21.5 8.5T840-230q0 12-8.5 21t-21.5 9h-95Zm-155 40q-29 0-49.5-23.5T490-240h-95v-140h95q0-33 20.5-56.5T560-460h125v300H560ZM275-280q-67 0-111-43.5T120-435q0-68 44-111.5T275-590h65q33 0 54-21t21-54q0-33-21-54t-54-21H190q-12 0-21-9t-9-21q0-13 9-21.5t21-8.5h150q58 0 96.5 38.5T475-665q0 58-38.5 96.5T340-530h-65q-42 0-68.5 26T180-435q0 43 26.5 69t68.5 26h90v60h-90Z" />
-                                </svg>
-                                Stiktyper
-                            </a>
-                            <a href="#" class="link-2">
-                                <svg class="icons-table" xmlns="http://www.w3.org/2000/svg" height="48"
-                                    viewBox="0 96 960 960" width="48">
-                                    <path
-                                        d="m393 891 279-335H492l36-286-253 366h154l-36 255Zm-73 85 40-280H160l360-520h80l-40 320h240L400 976h-80Zm153-395Z" />
-                                </svg>
-                                Ladehastighed
-                            </a>
-                            <a href="#" class="link-2">
-                                <svg class="icons-table" xmlns="http://www.w3.org/2000/svg" height="48"
-                                    viewBox="0 96 960 960" width="48">
-                                    <path
-                                        d="M450 976V856H160v-60h640v60H510v120h-60ZM325.175 553q12.825 0 21.325-8.675 8.5-8.676 8.5-21.5 0-12.825-8.675-21.325-8.676-8.5-21.5-8.5-12.825 0-21.325 8.675-8.5 8.676-8.5 21.5 0 12.825 8.675 21.325 8.676 8.5 21.5 8.5Zm310 0q12.825 0 21.325-8.675 8.5-8.676 8.5-21.5 0-12.825-8.675-21.325-8.676-8.5-21.5-8.5-12.825 0-21.325 8.675-8.5 8.676-8.5 21.5 0 12.825 8.675 21.325 8.676 8.5 21.5 8.5ZM200 440l66-192q5-14 16.5-23t25.5-9h344q14 0 25.5 9t16.5 23l66 192v272q0 10.5-6.75 17.25T736 736h-12q-10.5 0-17.25-6.75T700 712v-64H260v64q0 10.5-6.75 17.25T236 736h-12q-10.5 0-17.25-6.75T200 712V440Zm77-42h407l-41-122H317l-40 122Zm-17 60v130-130Zm0 130h440V458H260v130Z" />
-                                </svg>
-                                Service på elbiler
-                            </a>
-                            <a href="#" class="link-2">
-                                <svg class="icons-table" xmlns="http://www.w3.org/2000/svg" height="48"
-                                    viewBox="0 96 960 960" width="48">
-                                    <path
-                                        d="M430 1016q0-25 17.625-42.5T490 956V731q-15-4-28-10.5T438 703l-88 55q-14 9-30.5 11t-33.5-3l-180-51q-29-8-47.5-32.5T40 627q0-38 26.5-64.5T131 536h301q10-11 22-19t26-13V367q0-17 6.5-32t18.5-26l137-128q23-22 53.5-25.5T752 169q32 19.948 41.5 56.354T783 293.678L623 556q8 13 11.5 27t4.5 29l108 26q17 4 29.5 14t20.5 24l91 164q15 27 11 57t-26 52q-27 27-64.5 27T744 949L550 755v201q25 0 42.5 17.625T610 1016H430ZM160 286v-60h240v60H160Zm380 72v141q11 2 21.5 6t19.5 9l151-252q7-11 3.5-24T720 219.5q-9-5.5-19.5-4T683 224L540 358ZM40 446v-60h200v60H40Zm480 230q25.5 0 42.75-17.25T580 616q0-25.5-17.25-42.75T520 556q-25.5 0-42.75 17.25T460 616q0 25.5 17.25 42.75T520 676Zm-208 36 95-58q-5-14-5.5-29t1.5-29H131q-13 0-22 9t-9 22.333Q100 638 106 646q6 8 16 11l190 55Zm429-15-115-26q-6 12-15 22.5T591 712l196 195q9 9 22 9t22-9q8.25-8.4 9.625-18.2Q842 879 837 870l-96-173ZM120 926v-60h200v60H120Zm400-310Zm61-102Zm-178 82Zm188 116Z" />
-                                </svg>
-                                Strømkilder
-                            </a>
-                            <a href="#" class="link-2">
-                                <svg class="icons-table" xmlns="http://www.w3.org/2000/svg" height="48"
-                                    viewBox="0 96 960 960" width="48">
-                                    <path
-                                        d="M878 1016 758 896q-21 17-46.5 23.5T660 926q-70.833 0-120.417-49.618Q490 826.765 490 755.882 490 685 539.618 635.5q49.617-49.5 120.5-49.5Q731 586 780.5 635.583 830 685.167 830 756q0 26-6.5 52T800 854l120 120-42 42ZM659.859 866Q706 866 738 834.141q32-31.859 32-78T738.141 678q-31.859-32-78-32T582 677.859q-32 31.859-32 78T581.859 834q31.859 32 78 32ZM840 526h-60V276h-60v90H240v-90h-60v600h250v60H180q-26 0-43-17t-17-43V276q0-26 17-43t43-17h202q7-35 34.5-57.5T480 136q36 0 63.5 22.5T578 216h202q26 0 43 17t17 43v250ZM480 276q17 0 28.5-11.5T520 236q0-17-11.5-28.5T480 196q-17 0-28.5 11.5T440 236q0 17 11.5 28.5T480 276Z" />
-                                </svg>
-                                WLTP
-                            </a>
-                        </div>
-                    </div>
-                    <div class="links-content-categori">
-                        <div class="links-content">
-                            <h2>Brugererfaringer</h2>
-                            <a href="#" class="link-2">
-                                <svg class="icons-table" xmlns="http://www.w3.org/2000/svg" height="48"
-                                    viewBox="0 -960 960 960" width="48">
-                                    <path
-                                        d="M543-340q16.595 0 28.798-12.202Q584-364.405 584-381t-12.202-28.798Q559.595-422 543-422t-28.798 12.202Q502-397.595 502-381t12.202 28.798Q526.405-340 543-340Zm-25-126h47q2-29 8.5-43t32.5-39q27-26 37.5-45.395Q654-612.79 654-639q0-45.882-31.5-74.941Q591-743 540-743q-38 0-68 20.5T428-665l45 19q11-25 27.5-38t39.5-13q29.778 0 48.389 17Q607-663 607-637q0 20-9 35t-32 32q-32 29-40 46.5t-8 57.5ZM260-200q-24 0-42-18t-18-42v-560q0-24 18-42t42-18h560q24 0 42 18t18 42v560q0 24-18 42t-42 18H260Zm0-60h560v-560H260v560ZM140-80q-24 0-42-18t-18-42v-620h60v620h620v60H140Zm120-740v560-560Z" />
-                                </svg>
-                                FAQ
-                            </a>
-                            <a href="#" class="link-2">
-                                <svg class="icons-table" xmlns="http://www.w3.org/2000/svg" height="48"
-                                    viewBox="0 -960 960 960" width="48">
-                                    <path
-                                        d="m887-567-23-50-50-23 50-23 23-50 23 50 50 23-50 23-23 50ZM760-742l-35-74-74-35 74-35 35-74 35 74 74 35-74 35-35 74ZM360-80q-34 0-57.5-23.5T279-161h162q0 34-23.5 57.5T360-80ZM198-223v-60h324v60H198Zm5-121q-66-43-104.5-107.5T60-597q0-122 89-211t211-89q122 0 211 89t89 211q0 81-38 145.5T517-344H203Zm22-60h271q48-32 76-83t28-110q0-99-70.5-169.5T360-837q-99 0-169.5 70.5T120-597q0 59 28 110t77 83Zm135 0Z" />
-                                </svg>
-                                Tips og Tricks
-                            </a>
-                            <a href="#" class="link-2">
-                                <svg class="icons-table" xmlns="http://www.w3.org/2000/svg" height="48"
-                                    viewBox="0 -960 960 960" width="48">
-                                    <path
-                                        d="m801-305-50-50q48-51 73.5-104.5T850-591q0-78-25.5-131.5T751-827l50-50q56 58 87.5 126.5T920-591q0 91-31.5 159.5T801-305ZM662-447l-50-50q18-20 28-42.5t10-51.5q0-29-10-51.5T612-685l50-50q26 28 42 65.5t16 78.5q0 41-16 78.5T662-447Zm-302 6q-66 0-108-42t-42-108q0-66 42-108t108-42q66 0 108 42t42 108q0 66-42 108t-108 42ZM40-120v-94q0-38 19-64.5t49-41.5q51-26 120.5-43T360-380q62 0 131 17t120 43q30 15 49.5 41.5T680-214v94H40Zm60-60h520v-34q0-16-8.5-29.5T587-266q-48-27-109-40.5T360-320q-57 0-118.5 14.5T132-266q-14 7-23 21.5t-9 30.5v34Zm260-321q39 0 64.5-25.5T450-591q0-39-25.5-64.5T360-681q-39 0-64.5 25.5T270-591q0 39 25.5 64.5T360-501Zm0-90Zm0 411Z" />
-                                </svg>
-                                Erfaringer
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="heading-container">
-                <div class="heading-content">
-                    <h1>
-                        Vi sikre <span class="heading-span">dit</span> valg
-                    </h1>
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-        <!-- box.js -->
-
-        <div class="om-greenwheels-container">
-
-            
-            <div class="box show">
-                <div class="introdoktion-container">
-                     <h2 class="greenwheels-introdoktion">Her hos GreenWheels arbejder vi med at levere den nyeste viden inden for elbilsmarkedet, så du aldrig behøver at være i tvivl om din næste bil skal være en elbil.</h2>
-                </div>
-            </div>
-            
-            <div class="box show">
-                <div class="info-grafik-container">
-                 <img class="info-grafik-img" src="img/Info-grafik-optimeret.jpg" alt="Info grafik fra dst">
-                </div>
-            </div>
-
-
-        </div>
-
- <!-- box.js -->
-
-
-
-
-        <div class="map-container">
-            <div>
-                <h2 class="header-1">Ladekort</h2>
-            </div>
-            <div>
-                <div class="button-container">
-                    <div class="btn-grp-1">
-                        <div class="btn-grp-headline">
-                            <h2 class="headline-h2">Her kan du se hvor der er sat ladestanderer op i nærheden af dig
-                            </h2>
-                        </div>
-                        <h3 class="headline-h3">Ladehastighed</h3>
-                        <button onclick="VisStandere(0)" class="map-button">Alle</button>
-                        <button onclick="VisStandere(1)" class="map-button">Normal</button>
-                        <button onclick="VisStandere(2)" class="map-button">Hurtig</button>
-                        <button onclick="VisStandere(3)" class="map-button">Lyn</button>
-                        <h3 class="headline-h3">Stiktype</h3>
-                        <button class="map-button">Alle</button>
-                        <button class="map-button">CCS-Combo</button>
-                        <button class="map-button">Type 2</button>
-                        <button class="map-button">CHAdeMO</button>
-                        <h3 class="headline-h3">Udbyder</h3>
-                        <button class="map-button">Alle</button>
-                        <button class="map-button">OK</button>
-                        <button class="map-button">CLEVER</button>
-                        <button class="map-button">Allego</button>
-                    </div>
-                    <div id="map"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="card-container">
-            <div class="card-flex">
-                <div>
-                    <div class="firma-logo">EnergiFyn</div>
-                </div>
-                <div class="cards-flex-row">
-                    <div class="card-content">
-                        <p class="tekst-bold">995 kr ved leje af ladeboks</p>
-                        <p>Oprettelse pris ekskl. standardinstallation</p>
-                        <p>Serviceaftale 19 kr/mdr</p>
-                        <p>Lejeaftale 170 kr/mdr</p>
-                    </div>
-                    <div class="card-content">
-                        <p class="tekst-bold">1.995 kr ved leje af ladeboks</p>
-                        <p>Oprettelse pris inkl. standardinstallation</p>
-                        <p>Serviceaftale 19 kr/mdr</p>
-                        <p>Lejeaftale 170 kr/mdr</p>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <p class="tekst-bold">9.500 kr ved køb af ladeboks</p>
-                    <p>Oprettelses pris inkl. standardinstallation</p>
-                    <p>Serviceaftale 19 kr/mdr</p>
-                </div>
-                <div>
-                    <button class="card-button">Vælg aftale</button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="ok-card-container">
-            <div class="ok-flex-row">
-                <div>
-                    <div class="firma-logo">OK</div>
-                </div>
-                <div class="ok-content-row-container">
+        <article>
+            <div class="artikel-container">
+                <div class="artikel-content">
                     <div>
-                        <div class="ok-content-box">
-                            <p class="tekst-bold">995 kr ved leje af ladeboks med aftale</p>
-                            <p>Leje og serviceaftale 199 kr/md</p>
-                            <p>Elafgiftsrefusion 87 øre/kWh</p>
-                        </div>
-                        <div class="ok-content-box">
-                            <p class="tekst-bold">2.995 kr ved leje af ladeboks uden aftale</p>
-                            <p>Leje og serviceaftale 249 kr/md</p>
-                        </div>
-                        <div>
-                            <button class="card-button-ok">Vælg aftale</button>
-                        </div>
+                        <h1 class="artikel-overskrift">
+                            Priser på elbiler
+                        </h1>
                     </div>
                     <div>
-                        <div class="ok-content-box">
-                            <p class="tekst-bold">9.995 kr ved køb af ladeboks med aftale</p>
-                            <p>Serviceaftale 79 kr/md</p>
-                            <p>Elafgiftsrefusion 87 øre/kWh</p>
-                        </div>
-                        <div class="ok-content-box">
-                            <p class="tekst-bold">11.995 kr ved køb af ladeboks uden aftale</p>
-                            <p>Leje og serviceaftale 249 kr/md</p>
-                        </div>
-                        <div>
-                            <button class="card-button-ok">Vælg aftale</button>
-                        </div>
+                        <p class="artikel-indledning">
+                            Prisskiltet på elbiler er noget som skræmmer de fleste væk, men vidste du det er billigere at købe og eje en elbil end man skulle tro.
+                        </p>
+                    </div>
+                    <div class="artikel-flex">
+                        <p class="artikel-tekst">
+                            Med et hurtigt kig kan man se at købsprisen for elbiler er højere end på dens modparter, men elbilens prisfordel ligger i hvor meget billigere den er at bruge frem for hvor meget købsprisen er.
+                            En af de fordele elbiler nyder af er, at der er ingen pålagt afgift for elbiler med en købspris på op til 500.000 kr. Det betyder at hvad det ville koste om året at have elbil er drastisk mindre end andre type biler, 
+                            og med en gennemsnitlig pris for elbiler værende på 248.000kr, er der meget at spare på de månedlige og årlige omkostninger som bilejere. Ifølge FDMs forbrugerøkonomer så vil man kunne betale 100.000kr mere for sin elbil end 
+                            hvad man ville for en benzinbil, og stadig sparer penge ved at købe elbilen.
+                            Hvis det er den højere købspris, som stopper dig fra at købe en elbil, er der flere banker der tilbyder grønne billån, hvor renterne er lavere end et normalt lån, for at hjælpe flere med i den grønne omstilling.
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="ok-card-container">
-            <div class="ok-flex-row green">
-                <div>
-                    <div class="firma-logo">CLEVER</div>
-                </div>
-                <div class="ok-content-row-container">
+        </article>
+        <article>
+            <div class="artikel-container">
+                <div class="artikel-content">
                     <div>
-                        <div class="ok-content-box">
-                            <p class="tekst-bold">10.999 kr ved køb af ladeboks med aftale</p>
-                            <p>Få rabat på serviceaftalen, og strøm til indkøbspris</p>
-                            <p>Har du solceller eller elvarme,</p>
-                            <p>skal du vælge denne løsning</p> 
-                        </div>
-                        <div class="ok-content-box">
-                            <p>Pris inkl. indstallation</p>
-                            <p>Serviceaftale 80 kr/md</p>
-                            <p>CLEVER Power elaftale 49 kr/md</p>
-                        </div>
+                        <h1 class="artikel-overskrift">
+                            Rækkevidde
+                        </h1>
                     </div>
                     <div>
-                        <div class="ok-content-box">
-                            <p class="tekst-bold">10.999 kr ved køb af ladeboks uden aftale</p>
-                            <p>Vælg denne læsning hvis du ikke vil skifte elselskab</p>
-                            <p>Du kan altid skifte mening senere hen</p>
-                            <p>&nbsp</p>
-                        </div>
-                        <div class="ok-content-box">
-                            <p>Pris inkl. installation</p>
-                            <p>Serviceaftale 119 kr/md</p>
-                            <p>&nbsp</p>
-                        </div>
+                        <p class="artikel-indledning">
+                            En af de store udfordringer i elbilens levetid har været rækkevidden, men er det virkelig så stor en udfordring som man skulle tro.
+                        </p>
                     </div>
-                </div>
-                <div>
-                    <button class="card-button">Vælg aftale</button>
+                    <div class="artikel-flex">
+                        <p class="artikel-tekst">
+                            Med udviklingen af nye teknologier og teknikker, så har elbilen nydt godt af de fremskridt. Noget der tydeligt kan ses på rækkevidden for selv de billigere elbiler.
+                            Nissan Leaf er en af de billigere elbiler med en pris på 216.000kr, som fabriksny og har en udregnet rækkevidde på 285 km og med et batteri på små 39 kWh er det en markant forbedring af den første Nissan Leaf model solgt tilbage i 2010, der havde en reklameret rækkevidde på 175 km.
+                            Hvis man vælger at gå i de dyre prisklasser, påvirker det selvfølgelig også rækkevidde på bilen. 
+                            Volkswagens ID.4, der sælges for 340.000kr, kommer med en rækkevidde på 359 km og hvis man vælger at betale 45.000kr ekstra stiger rækkevidden til 527 km.
+                        </p>
+                        <p class="artikel-tekst">
+                            Teslas model Y befinder sig også i det dyre prislag, men kommer så derfor også med et hav at de klassiske Tesla modifikationer, dog med en pris på 382.490 kr, koster den næsten det samme som Volkswagens ID.4 med ekstra udstyr og længere rækkevidde, mens for de samme penge levere Tesla model Y 455 km.
+                            Rækkevidden på elbiler varierer meget mellem de forskellige forhandlere, og er ikke altid den samme rækkevidde man får for pengene, som ses på VW ID.4 og Tesla model Y.
+                            En undersøgelse fra 2016 viser dog at 9 ud af 10 danske pendlers behov for rejse kan dækkes af elbiler. Teknologien er udviklet til et punkt hvor rækkevidden ikke længere er en barrierer for at skifte til elbilen.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-
-
+        </article>
+        <article>
+            <div class="artikel-container">
+                <div class="artikel-content">
+                    <div>
+                        <h1 class="artikel-overskrift">
+                            Garanti
+                        </h1>
+                    </div>
+                    <div>
+                        <p class="artikel-indledning">
+                            Hvordan ser garantien ud på elbiler?
+                        </p>
+                    </div>
+                    <div class="artikel-flex">
+                        <p class="artikel-tekst">
+                            Der er ikke nogen forskel på garantien, som så'n mellem benzin- og elbiler. De fleste forhandlere giver en garanti på 8 år eller 100.000km på deres elbiler.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="artikel-container">
+                <div class="artikel-content">
+                    <div>
+                        <h1 class="artikel-overskrift">
+                            Opladningstid
+                        </h1>
+                    </div>
+                    <div>
+                        <p class="artikel-indledning">
+                            For alle der har en elbil og overvejer at købe en elbil, så en af de store faktorer, er hvor lang tid der skal bruges på at oplade bilen.
+                        </p>
+                    </div>
+                    <div class="artikel-flex">
+                        <p class="artikel-tekst">
+                            Der findes ikke et endegyldigt svar på hvor lang tid det tager at lade en elbil op. Det afhænger af kapaciteten på bilens batteri og hvor meget den pågældende oplader kan levere af strøm. Det vil sige, at hvis du har et batteri med meget høj kapacitet,
+                            men en lav ladeeffekt, så vil det tage op imod 20 timer at fuldt oplade batteriet. Derimod hvis du øgede ladeeffekten kan du komme helt ned på omkring 3 timer for en fuld opladning på de større batterier.
+                            Ladetiden for elbiler kan laves med et regnestykke der hedder “Batterikapaciteten(kWh)” divideret med “Ladeeffekt(kWh)”
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="artikel-container">
+                <div class="artikel-content">
+                    <div>
+                        <h1 class="artikel-overskrift">
+                            Batterilevetid
+                        </h1>
+                    </div>
+                    <div>
+                        <p class="artikel-indledning">
+                            Hvor lang tid kan et elbils batteri overhovedet holde?
+                        </p>
+                    </div>
+                    <div class="artikel-flex">
+                        <p class="artikel-tekst">
+                            Nu når elbilen har været på markedet i over 10 år, er mange af de bekymringer og irritationer der kan være mere eller mindre forsvundet. En af dem er batterilevetiden. Man kan hurtigt komme til at have frygten for at ligesom man oplever med mobil- og bærbarbatterier, at de hurtigt ville miste effektiviteten inden for et par år.
+                            Typisk er der en fabriksgaranti på 8 år eller 100.000km kørt, hvilket betyder at hvis batterikapaciteten er faldet til under 70%, så står fabrikken for en udskiftning af batteriet. Ifølge FDM er det dog sjældent, at de hører om elbiler hvis batterikapaciteten er faldet under 70%.
+                            Hvis du er interesseret i at tjekke din elbils forventede batterilevetid, har Geotab udviklet et “battery-degradation-tool”, som viser data fra en masse elbiler og deres batterikapacitet over årene. FDM tilbyder også at tjekke batteritilstanden af din elbil, som en del af deres service.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="artikel-container">
+                <div class="artikel-content">
+                    <div>
+                        <h1 class="artikel-overskrift">
+                            Batterityper
+                        </h1>
+                    </div>
+                    <div>
+                        <p class="artikel-indledning">
+                            Som i mange andre teknologiske brancher så er li-ion-batteri anvendt i næsten alle elbiler
+                        </p>
+                    </div>
+                    <div class="artikel-flex">
+                        <p class="artikel-tekst">
+                            Elbilbatterier hører under betegnelsen lithium-ion batterier også kaldet li-ion, som har den kemiske formel lithium-nikkel-mangan-kobolt-oxid (LiNiMnCoO2).
+                            I dag er li-ion-batteriet det mest anvendte batteri og er velkendt fra elektronik- og elbilbranchen. Årsagen til populariteten ligger i de mange fordele og egenskaber som li-ion-batterierne besidder.
+                            En af de største fordele ved li-ion-batterierne er den høje energitæthed, som andre genopladelige batterityper ikke besidder. En højere energidensitet betyder, at der er mere energi pr. volumen i batteriet, 
+                            altså vil batteriet optage mindre plads end andre batterityper med samme energiindhold.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="artikel-container">
+                <div class="artikel-content">
+                    <div>
+                        <h1 class="artikel-overskrift">
+                            Stiktyper
+                        </h1>
+                    </div>
+                    <div>
+                        <p class="artikel-indledning">
+                            Der er kommet en del forskellige stiktyper gennem årene, men der er 3 som har en stor overvægt på markedet. De 3 stik er “Type 2” , “CCS-Combo” og “CHAdeMO” men hvad er det lige forskellen på stikkene er.
+                        </p>
+                    </div>
+                    <div class="artikel-flex">
+                        <p class="artikel-tekst">Type 2</p>
+                        <img class="artikel-img" src="img/type-2-optimeret.jpg" alt="Type 2 stik">
+                        <p class="artikel-tekst">
+                            Type 2-stikket er det moderne og mest gængse ladestik på både elbiler og plugin-hybrid i Europa.
+                            Type 2-stikket bruges til at oplade elbil og plugin-hybrid. Stikket består af han/hun stik og kan anvendes på de fleste ladestandere. En del ladebokse har dog et integreret stik, som er en fast del fra ladestanderen.
+                            Bilen og ladeboksen/ladestanderen registrerer hinanden og udveksler data om den tilgængelige ladeeffekt, 
+                            om der skal lades, og i så fald hvor meget der skal lade med. Hvis ikke der er fejl, accepterer BMS'en (Battery Management System) at opladningen går i gang, 
+                            og der kan nu leveres strøm fra ladeboksen til bilens lader og batteriet kan nu oplades. Når ladeprocessen er ved at være slut, så beder BMS'en ladeboksen eller standeren om at stoppe opladningen, 
+                            vekselspændingen afbrydes, og opladningen stopper. Opstår der fejl på stikket, eller andre fejl i strømkredsen mellem bil og ladeboks, så ophører opladningen automatisk.
+                        </p>
+                        <p class="artikel-tekst">CCS-Combo</p>
+                        <p class="artikel-tekst">
+                            CCS-Combo (Combined Charging System) er en videreudvikling af Type 2 stikket. 
+                            En del af de store tyske bilproducenter har udarbejdet denne standard for hurtigladning. 
+                            Stikket er udbygget med to store stikben nederst til levering af en højeffekt af strøm.
+                        </p>
+                        <p class="artikel-tekst">CHAdeMO</p>
+                        <p class="artikel-tekst">
+                            CHAdeMO er udviklet af en japansk sammenslutning af bilproducenter, 
+                            som har udviklet denne standard, med samme formål som CSS-Combo stikket, 
+                            hurtigladning af elbilen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="artikel-container">
+                <div class="artikel-content">
+                    <div>
+                        <h1 class="artikel-overskrift">
+                        Vedligeholdelse
+                        </h1>
+                    </div>
+                    <div>
+                        <p class="artikel-indledning">
+                            Med et emne som elbiler, der er så nyt og teknisk, kan man godt frygte, at efter den højere købspris følger også en højere servicepris samt vedligeholdelseskrav.
+                        </p>
+                    </div>
+                    <div class="artikel-flex">
+                        <p class="artikel-tekst">
+                            Noget af det første at bide mærke i er at selvom elbilen bliver set som noget der er for den tekniske kunnen, så man skulle tro at det ville være en sværere opgave at vedligeholde sin elbil. 
+                            For sammenlignet med biler med almindelige brændstofdrevne motorer, så er elbiler markant enklere opbygget. Det betyder, at der er færre ting, som i løbet af årene bliver slidt og skal udskiftes, 
+                            hvilket også betyder færre ture på værkstedet for at få udskiftet dele.
+                            Elbiler har hverken motor eller gearkasse, og det vil sige, at der ikke medfølger almindelige sliddele såsom oliefilter, luftfilter, tændrør, kobling, udstødning, som kan gå i stykker og skal udskiftes. 
+                            Eller f.eks. kølervæske der skal påfyldes. Alt andet lige er der markant mindre vedligeholdelse, og med færre mekanikerregninger får bilejeren også lidt mere luft i husholdningsbudget.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="artikel-container">
+                <div class="artikel-content">
+                    <div>
+                        <h1 class="artikel-overskrift">
+                            Strømkilde
+                        </h1>
+                    </div>
+                    <div>
+                        <p class="artikel-indledning">
+                            En af de helt store tiltrækningsfaktorer ved elbilen er at den lige netop kører på el, frem for fossilebrændstoffer, 
+                            men hvad betyder det for elbilens egentlige miljøpåvirkningen hvis den strøm der bliver brugt til at oplade den kommer fra “sort” energi.
+                        </p>
+                    </div>
+                    <div class="artikel-flex">
+                        <p class="artikel-tekst">
+                            I grøn dansk energiproduktion er det vindmøller og solceller, som trækker det tungeste læs. Tilsammen i 2022 producerede de 21,2 TWh elektricitet. Vindmøllerne stod for størstedelen af det med 19 TWh, 
+                            mens solcellerne producerede 2,2 TWh.
+                            De 21,2 TWh satte en ny rekord for dansk produktion, med en samlet forøgelse på 22 procent fra 2021, hvor der blev produceret 17,3 TWh ifølge opgørelse fra DI Energi
+                            Tommelfingerreglen er, at 4 TWh produceret grøn strøm kan dække cirka 1 million husstandes elforbrug om året. 
+                            Det vil sige, at de danske vindmøller og solceller i 2022 producerede nok grøn strøm til ca. 5,3 millioner husstande i 2022.
+                        </p>
+                        <p class="artikel-tekst">
+                            Grønne virksomheder er generelt mere aktive inden for forskning og udvikling end ikke-grønne virksomheder. Andelen af de beskæftigede, der beskæftiger sig med forsknings- og udviklingsaktiviteter, 
+                            er højere i grønne virksomheder (9 af 100 beskæftigede) end i ikke-grønne virksomheder (5 af 100 beskæftigede). Tilsvarende er 77 pct. 
+                            af grønne virksomheder innovative virksomheder mod 66 pct. af de ikke-grønne virksomheder.
+                        </p>
+                        <p class="artikel-tekst">
+                            Det gennemsnitlige energiforbrug i liter/km for nye personbiler uanset drivmiddel ligger 6,5 pct. lavere 2021 end det gjorde i 2020. Ændringen skyldes udelukkende, at salget af el- og hybridbiler 
+                            med et meget lavere energiforbrug end de fossile biler, er steget fra 9,3 pct. 2020 til 26,5 pct. i 2021.
+                            Forbruget på tværs af drivmidler på 3,5 liter/100 km svarer til en energieffektivitet på 28,4 km/liter. De fossile bilers energiforbrug er steget med 9,1 pct.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="artikel-container">
+                <div class="artikel-content">
+                    <div>
+                        <h1 class="artikel-overskrift">
+                            WLTP
+                        </h1>
+                    </div>
+                    <div>
+                        <p class="artikel-indledning">
+                            Hvordan regner de overhovedet rækkevidden ud, som der reklameres med.
+                        </p>
+                    </div>
+                    <div class="artikel-flex">
+                        <p class="artikel-tekst">
+                            Alle rækkevidde værdier bilforhandlerne reklamere med er beregnet ud fra EU's nye testmetode for biler solgt i EU kaldet WLTP, 
+                            der erstattede den gamle NEDC testmetode. WLTP er en forbedring i at bilerne bliver udsat for mere realistiske testbetingelser, 
+                            så den reklamerede rækkevidde for bilerne er tættere på virkeligheden.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
     </main>
     <footer>
         <div class="footer-container">

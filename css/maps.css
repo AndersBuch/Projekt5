@@ -656,6 +656,47 @@ body {
   
 }
 
+/* Informations side  --- starter */
+
+.artikel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  margin: 20px;
+}
+
+.artikel-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  height: auto;
+  line-height: 1.5;
+}
+
+.artikel-overskrift {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.artikel-indledning {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.artikel-tekst {
+  font-size: 25px;
+  height: auto;
+}
+
+.artikel-img {
+  float: left;
+  max-width: 100px;
+}
+/* Informations side  --- slutter */
+
 .footer-icons {
   fill: #ffffff;
   width: 48px;
